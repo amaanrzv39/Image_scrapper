@@ -89,3 +89,12 @@ INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 06:52:00] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 06:52:00] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 06:52:00] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 06:52:20] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.137:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 07:05:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 07:05:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 07:05:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 07:06:03] "POST /review HTTP/1.1" 200 -
