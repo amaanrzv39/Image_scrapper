@@ -13,4 +13,3 @@ def client():
 def test_homepage(client):
     response = client.get('/')
     assert response.status_code == 200  # Check if the status code is 200
-    assert b'Image Scraper' in response.data

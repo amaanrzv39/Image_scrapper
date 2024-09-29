@@ -9,3 +9,6 @@ lint:
 
 run:
 	python app.py
+
+all:
+	install lint test
