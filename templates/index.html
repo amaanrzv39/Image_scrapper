@@ -1,20 +1,29 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Scraper</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Image Scraper</h1>
+    
+    <form method="POST" action="/review">
+        <label for="content">Enter Image Query:</label>
+        <input type="text" id="content" name="content" required placeholder="Type something to search...">
+        <button type="submit">Scrape Images</button>
+    </form>
 
-{% block head %}
-
-<title>Search Page</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-{% endblock %}
-
-{% block body %}
-<div class="content">
-    <h1 style="text-align: center">Search Images</h1>
-
-    <div class="form">
-        <form action="/review" method="POST">
-            <input type="text" name="content" id="content">
-            <input type="submit" value="Search">
-        </form>
+    <!-- Display Images in a grid -->
+    {% if images %}
+    <h2>Scraped Images:</h2>
+    <div class="image-grid">
+        {% for image in images %}
+            <img src="{{ image }}" alt="Image">
+        {% endfor %}
     </div>
-</div>
-{% endblock %}
+    {% endif %}
+</body>
+</html>

@@ -98,3 +98,174 @@ INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 07:05:45] "GET / HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 07:05:45] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 07:05:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [01/Jan/2024 07:06:03] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.77:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:06:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:06:49] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:06:49] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:06:49] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:07:03] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.77:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:17:13] "GET /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:17:13] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:17:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:17:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:17:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:17:14] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:17:24] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:32:21] "GET /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:32:21] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:32:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:32:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:32:22] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:32:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:33:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:33:50] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:33:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:33:59] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:34:46] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.77:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /review [GET]
+Traceback (most recent call last):
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/app.py", line 74, in index
+    return render_template('index.html')
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/templates/index.html", line 22, in template
+    {% block body %}
+jinja2.exceptions.TemplateAssertionError: block 'body' defined twice
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:35:03] "[35m[1mGET /review HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/app.py", line 15, in homepage
+    return render_template("index.html")
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/templates/index.html", line 22, in template
+    {% block body %}
+jinja2.exceptions.TemplateAssertionError: block 'body' defined twice
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:35:04] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR:app:Exception on / [GET]
+Traceback (most recent call last):
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/app.py", line 15, in homepage
+    return render_template("index.html")
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1084, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 1013, in get_template
+    return self._load_template(name, globals)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 972, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/.venv/lib/python3.9/site-packages/jinja2/environment.py", line 939, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/nanu/Desktop/mlops/Image_scrapper/templates/index.html", line 22, in template
+    {% block body %}
+jinja2.exceptions.TemplateAssertionError: block 'body' defined twice
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:35:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.77:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 824-404-303
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:35:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:35:47] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:35:47] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:35:47] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=0F3FJpICEXZ9VJjbPoBr HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in '/Users/nanu/Desktop/mlops/Image_scrapper/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 824-404-303
+INFO:werkzeug: * Detected change in '/Users/nanu/Desktop/mlops/Image_scrapper/app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 824-404-303
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:40:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:40:39] "GET /static/css/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:40:46] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 20:40:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.0.77:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 824-404-303
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 21:01:20] "GET /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 21:01:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 21:01:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 21:01:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 21:01:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 21:01:25] "POST /review HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [29/Sep/2024 21:01:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in '/Users/nanu/Desktop/mlops/Image_scrapper/test_app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 824-404-303
