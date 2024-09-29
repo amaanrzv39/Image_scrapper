@@ -4,3 +4,4 @@ requests
 bs4
 pytest
 pylint
+urllib3==1.26.16
